@@ -9,9 +9,9 @@ ifopen net0
 echo If you don't have DHCP, then hit Control+C to cancel
 dhcp net0
 set 209:string pxelinux.cfg/default
-set 210:string http://download.fedora.redhat.com/pub/alt/
+set 210:string http://serverbeach1.fedoraproject.org/pub/alt/
 echo Here we go!
-chain http://download.fedora.redhat.com/pub/alt/pxelinux.0
+chain http://serverbeach1.fedoraproject.org/pub/alt/pxelinux.0
 dhcp net0
-kernel http://download.fedora.redhat.com/pub/alt/fedora.gpxe
+kernel http://serverbeach1.fedoraproject.org/pub/alt/fedora.gpxe
 boot fedora.gpxe
